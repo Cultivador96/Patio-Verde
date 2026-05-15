@@ -1,88 +1,60 @@
----
-layout: default
-title: The Urban Leaf
----
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patio-Verde | Cultivo y Agricultura</title>
+  <meta name="description" content="Patio-Verde es un espacio dedicado al cultivo, agricultura sostenible y técnicas modernas para mejorar tus cultivos.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-# Bienvenido a The Urban Leaf
+<header>
+  <div class="container nav">
+    <h1 class="logo">Patio-Verde</h1>
 
-La horticultura urbana y el cultivo doméstico han ganado popularidad en los últimos años. Cada vez más personas buscan formas prácticas de cultivar plantas aromáticas, ornamentales y vegetales en espacios reducidos como terrazas, balcones o habitaciones interiores.
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="sobre-nosotros.html">Nosotros</a>
+      <a href="cultivo.html">Cultivo</a>
+      <a href="agricultura.html">Agricultura</a>
+      <a href="recursos.html">Recursos</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
 
-![Horticultura urbana](./assets/img/urban-garden.jpg)
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h2>Cultivo moderno y agricultura sostenible</h2>
+    <p>Información, recursos y técnicas para mejorar tus proyectos agrícolas.</p>
+    <a href="cultivo.html" class="btn">Explorar contenido</a>
+  </div>
+</section>
 
-## Qué encontrarás en este proyecto
+<section class="features container">
+  <div class="card">
+    <h3>Cultivo Indoor</h3>
+    <p>Consejos para optimizar iluminación, ventilación y control ambiental.</p>
+  </div>
 
-En The Urban Leaf compartimos contenido informativo y educativo relacionado con:
+  <div class="card">
+    <h3>Agricultura Sostenible</h3>
+    <p>Métodos modernos para mejorar la eficiencia y el rendimiento agrícola.</p>
+  </div>
 
-- iluminación para cultivo interior
-- ventilación y circulación de aire
-- organización de espacios pequeños
-- sustratos y drenaje
-- mantenimiento de plantas domésticas
-- horticultura urbana sostenible
+  <div class="card">
+    <h3>Recursos Profesionales</h3>
+    <p>Guías, herramientas y recomendaciones para agricultores y cultivadores.</p>
+  </div>
+</section>
 
----
+<footer>
+  <p>© 2026 Patio-Verde — Todos los derechos reservados.</p>
+</footer>
 
-# Contenido destacado
-
-## Guías recomendadas
-
-### 🌱 Iluminación para cultivo interior
-Aprende cómo funcionan los distintos sistemas de iluminación y qué factores influyen en la distribución de la luz.
-
-[Ver guía](./guia-iluminacion)
-
----
-
-### 🪴 Organización de espacios pequeños
-Consejos para optimizar habitaciones, balcones y zonas interiores dedicadas al cultivo doméstico.
-
-[Leer artículo](./cultivo-interior-pequenos-espacios)
-
----
-
-### 🌿 Sustratos y drenaje
-Información básica sobre mezclas de sustrato, retención de humedad y oxigenación.
-
-[Más información](./sustratos-y-drenaje)
-
----
-
-### 📅 Calendario de mantenimiento
-Rutinas semanales y mensuales para mantener un espacio de horticultura interior organizado.
-
-[Consultar calendario](./calendario-de-cultivo)
-
----
-
-# Recursos externos
-
-Algunos organismos y recursos útiles relacionados con horticultura, sostenibilidad y medio ambiente:
-
-- [World Health Organization](https://www.who.int/)
-- [FAO](https://www.fao.org/)
-- [EPA](https://www.epa.gov/)
-- [Google Scholar](https://scholar.google.com/)
-
----
-
-# Sobre el proyecto
-
-The Urban Leaf es un proyecto informativo centrado en horticultura urbana, cultivo doméstico y organización de espacios interiores.
-
-El objetivo es compartir contenido educativo y accesible para personas interesadas en aprender más sobre técnicas básicas de cultivo y mantenimiento de plantas.
-
-[Conocer más](./sobre-el-proyecto)
-
----
-
-# Navegación rápida
-
-- [Guía de iluminación](./guia-iluminacion)
-- [Cultivo en pequeños espacios](./cultivo-interior-pequenos-espacios)
-- [Sustratos y drenaje](./sustratos-y-drenaje)
-- [Errores comunes](./errores-comunes)
-- [Recursos](./recursos)
-
----
-
-_Última actualización: Mayo 2026_
+<script src="js/script.js"></script>
+</body>
+</html>
