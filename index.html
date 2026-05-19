@@ -3,674 +3,877 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Patio-Verde</title>
+<title>Patio-Verde</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
 
-  <style>
+<style>
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
-
-    body{
-      font-family:'Inter',sans-serif;
-      background:#f5f5f5;
-    }
-
-    .container{
-      width:90%;
-      max-width:1300px;
-      margin:auto;
-    }
-
-    .topbar{
-      background:#07150b;
-      color:white;
-      text-align:center;
-      padding:10px;
-      font-size:.9rem;
-    }
-
-    header{
-      position:absolute;
-      width:100%;
-      z-index:100;
-    }
-
-    .navbar{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:30px 0;
-    }
-
-  .logo{
-  color:white;
-  font-size:2rem;
-  font-weight:800;
-  text-decoration:none;
-  display:inline-block;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-    nav a{
-      color:white;
-      text-decoration:none;
-      margin-left:30px;
-      font-weight:500;
-    }
+html{
+scroll-behavior:smooth;
+}
 
-    .hero{
+body{
+font-family:'Inter',sans-serif;
+background:#f5f5f5;
+color:#17351f;
+}
 
-      height:100vh;
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
 
-      background:
-      linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-      url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2070&auto=format&fit=crop');
+.topbar{
+background:#07150b;
+color:white;
+text-align:center;
+padding:12px;
+font-size:.95rem;
+font-weight:500;
+}
 
-      background-size:cover;
-      background-position:center;
+header{
+position:absolute;
+width:100%;
+z-index:100;
+}
 
-      display:flex;
-      align-items:center;
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 0;
+}
 
-    }
+.logo{
+color:white;
+font-size:2rem;
+font-weight:800;
+text-decoration:none;
+}
 
-    .hero-content{
-      color:white;
-      max-width:700px;
-    }
+nav a{
+color:white;
+text-decoration:none;
+margin-left:35px;
+font-weight:500;
+transition:.3s;
+}
 
-    .subtitle{
-      color:#8dff63;
-      font-weight:700;
-      letter-spacing:1px;
-    }
+nav a:hover{
+color:#8dff63;
+}
 
-    .hero h1{
-      font-size:5rem;
-      line-height:1.1;
-      margin:20px 0;
-      font-weight:800;
-    }
+.hero{
 
-    .hero h1 span{
-      color:#8dff63;
-    }
+height:100vh;
 
-    .hero p{
-      font-size:1.2rem;
-      line-height:1.8;
-      margin-bottom:35px;
-    }
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=2070&auto=format&fit=crop');
 
-    .buttons{
-      display:flex;
-      gap:20px;
-      margin-bottom:40px;
-    }
+background-size:cover;
+background-position:center;
 
-    .btn-primary,
-    .btn-secondary{
+display:flex;
+align-items:center;
 
-      padding:16px 32px;
-      border-radius:50px;
-      text-decoration:none;
-      font-weight:700;
+}
 
-    }
+.hero-content{
+color:white;
+max-width:700px;
+}
 
-    .btn-primary{
-      background:#7dff4d;
-      color:#13210f;
-    }
+.subtitle{
+color:#8dff63;
+font-weight:700;
+letter-spacing:2px;
+font-size:1rem;
+}
 
-    .btn-secondary{
-      border:1px solid rgba(255,255,255,.5);
-      color:white;
-    }
+.hero h1{
+font-size:5rem;
+line-height:1.05;
+margin:25px 0;
+font-weight:800;
+}
 
-    .features{
-      display:flex;
-      gap:40px;
-      flex-wrap:wrap;
-      color:white;
-    }
+.hero h1 span{
+color:#8dff63;
+}
 
-    .benefits{
-      padding:100px 0;
-    }
+.hero p{
+font-size:1.2rem;
+line-height:1.8;
+margin-bottom:40px;
+max-width:600px;
+}
 
-    .section-title{
-      text-align:center;
-      margin-bottom:60px;
-    }
+.buttons{
+display:flex;
+gap:20px;
+margin-bottom:45px;
+}
 
-    .section-title h2{
-      font-size:3rem;
-      color:#17351f;
-      margin-bottom:20px;
-    }
+.btn-primary,
+.btn-secondary{
 
-    .section-title p{
-      color:#555;
-      line-height:1.7;
-    }
+padding:18px 34px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
 
-    .cards{
+}
 
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-      gap:30px;
+.btn-primary{
+background:#8dff63;
+color:#13210f;
+}
 
-    }
+.btn-primary:hover{
+transform:translateY(-3px);
+}
 
-    .card{
+.btn-secondary{
+border:1px solid rgba(255,255,255,.5);
+color:white;
+}
 
-      background:white;
-      padding:35px;
-      border-radius:20px;
+.btn-secondary:hover{
+background:white;
+color:#13210f;
+}
 
-      display:flex;
-      gap:20px;
-      align-items:center;
+.features{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+color:white;
+margin-top:10px;
+}
 
-      box-shadow:0 10px 30px rgba(0,0,0,.06);
+.feature-item{
+display:flex;
+align-items:center;
+gap:14px;
+}
 
-    }
+.feature-icon{
+font-size:1.8rem;
+color:#8dff63;
+}
 
-    .icon{
+.benefits,
+.quick-links,
+.products,
+.reviews{
+padding:110px 0;
+}
 
-      width:70px;
-      height:70px;
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
 
-      border-radius:50%;
-      background:#e7f8de;
+.section-title h2{
+font-size:3.2rem;
+margin-bottom:20px;
+color:#17351f;
+}
 
-      display:flex;
-      align-items:center;
-      justify-content:center;
+.section-title p{
+color:#666;
+font-size:1.1rem;
+line-height:1.8;
+max-width:700px;
+margin:auto;
+}
 
-      font-size:1.5rem;
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
 
-    }
+.card{
 
-    .quick-links{
-      padding:80px 0;
-    }
+background:white;
+padding:45px;
+border-radius:24px;
 
-    .quick-box{
-      background:white;
-      border-radius:24px;
-      padding:50px;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
 
-      box-shadow:0 10px 30px rgba(0,0,0,.06);
-    }
+box-shadow:0 10px 30px rgba(0,0,0,.06);
 
-    .quick-box h2{
-      color:#ef6f6f;
-      font-size:2.5rem;
-      margin-bottom:30px;
-    }
+transition:.3s;
 
-    .quick-box ul{
-      list-style:none;
-    }
+}
 
-    .quick-box li{
-      font-size:1.2rem;
-      margin-bottom:24px;
-      color:#183221;
+.card:hover{
+transform:translateY(-8px);
+}
 
-      display:flex;
-      align-items:center;
-      gap:12px;
-    }
+.icon{
 
-    .products,
-    .reviews{
-      padding:100px 0;
-    }
+width:90px;
+height:90px;
 
-    .product-grid,
-    .review-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-      gap:30px;
-    }
+border-radius:50%;
+background:#edf9e6;
 
-    .product-card,
-    .review-card{
-      background:white;
-      border-radius:20px;
-      overflow:hidden;
-      box-shadow:0 10px 30px rgba(0,0,0,.06);
-    }
+display:flex;
+align-items:center;
+justify-content:center;
 
-    .product-card img{
-      width:100%;
-      height:250px;
-      object-fit:cover;
-    }
+font-size:2rem;
+margin-bottom:25px;
 
-    .product-card h3,
-    .product-card p,
-    .product-card a{
-      margin-left:25px;
-      margin-right:25px;
-    }
+}
 
-    .product-card h3{
-      margin-top:20px;
-    }
+.card h3{
+font-size:1.7rem;
+margin-bottom:15px;
+}
 
-    .product-card p{
-      margin-top:10px;
-      margin-bottom:20px;
-    }
+.card p{
+line-height:1.8;
+color:#666;
+}
 
-    .product-card a{
-      display:inline-block;
-      margin-bottom:25px;
-      background:#7dff4d;
-      color:#13210f;
-      padding:12px 20px;
-      border-radius:40px;
-      text-decoration:none;
-      font-weight:700;
-    }
+.quick-box{
 
-    .review-card{
-      padding:40px;
-    }
+background:#eef5e8;
+border-radius:30px;
+padding:60px;
 
-    .review-card p{
-      margin:20px 0;
-      line-height:1.7;
-    }
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:40px;
 
-    .stars{
-      font-size:1.2rem;
-    }
+}
 
-    @media(max-width:900px){
+.quick-left h2{
+font-size:3rem;
+color:#ef6f6f;
+margin-bottom:35px;
+}
 
-      .navbar{
-        flex-direction:column;
-        gap:20px;
-      }
+.quick-left ul{
+list-style:none;
+}
 
-      nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-      }
+.quick-left li{
+margin-bottom:30px;
+font-size:1.2rem;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding-bottom:15px;
+border-bottom:1px solid rgba(0,0,0,.08);
+}
 
-      .hero h1{
-        font-size:3rem;
-      }
+.quick-left a{
+text-decoration:none;
+color:#17351f;
+font-weight:500;
+transition:.3s;
+}
 
-      .buttons{
-        flex-direction:column;
-      }
+.quick-left a:hover{
+color:#6edc47;
+}
 
-    }
+.quick-right img{
+width:100%;
+border-radius:20px;
+}
 
-  </style>
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:white;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.product-card:hover{
+transform:translateY(-8px);
+}
+
+.product-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.product-info{
+padding:28px;
+}
+
+.product-tag{
+display:inline-block;
+background:#e7f8de;
+color:#17351f;
+padding:8px 14px;
+border-radius:30px;
+font-size:.8rem;
+font-weight:700;
+margin-bottom:18px;
+}
+
+.product-info h3{
+font-size:1.6rem;
+margin-bottom:14px;
+}
+
+.product-info p{
+color:#666;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.product-bottom{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.price{
+font-size:1.6rem;
+font-weight:800;
+}
+
+.product-bottom a{
+background:#8dff63;
+color:#13210f;
+padding:12px 22px;
+border-radius:40px;
+text-decoration:none;
+font-weight:700;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.review-card{
+background:white;
+padding:45px;
+border-radius:24px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+text-align:center;
+}
+
+.stars{
+font-size:1.4rem;
+margin-bottom:20px;
+}
+
+.review-card p{
+line-height:1.9;
+margin-bottom:25px;
+color:#555;
+font-size:1.05rem;
+}
+
+.review-card span{
+font-weight:700;
+}
+
+footer{
+background:#07150b;
+color:white;
+text-align:center;
+padding:40px 0;
+margin-top:60px;
+}
+
+@media(max-width:900px){
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.buttons{
+flex-direction:column;
+}
+
+.quick-box{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-  <div class="topbar">
-    🌱 Envío gratis en pedidos superiores a 39€
-  </div>
+<div class="topbar">
+🌱 Envío gratis en pedidos superiores a 39€
+</div>
 
-  <header>
+<header>
 
-    <div class="container navbar">
+<div class="container navbar">
 
-     <a href="index.html" class="logo">
-  🌿 Patio-Verde
+<a href="index.html" class="logo">
+🌿 Patio-Verde
 </a>
 
-      <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Cultivo</a>
-        <a href="#">Recursos</a>
-        <a href="#">Contacto</a>
-      </nav>
+<nav>
+<a href="#">Inicio</a>
+<a href="#productos">Productos</a>
+<a href="blog.html">Cultivo</a>
+<a href="blog.html">Recursos</a>
+<a href="#">Contacto</a>
+</nav>
 
-    </div>
+</div>
 
-  </header>
+</header>
 
-  <section class="hero">
+<section class="hero">
 
-    <div class="container hero-content">
+<div class="container hero-content">
 
-      <span class="subtitle">
-        CULTIVA TU FUTURO
-      </span>
+<span class="subtitle">
+CULTIVA TU FUTURO
+</span>
 
-      <h1>
-        Todo lo que necesitas
-        para <span>tus cultivos</span>
-      </h1>
+<h1>
+Todo lo que necesitas
+para <span>tus cultivos</span>
+</h1>
 
-      <p>
-        Recursos, herramientas y conocimientos
-        para agricultura moderna y sostenible.
-      </p>
+<p>
+Recursos, herramientas y conocimientos
+para agricultura moderna y sostenible.
+</p>
 
-      <div class="buttons">
+<div class="buttons">
 
-        <a href="#" class="btn-primary">
-          Ver productos
-        </a>
-
-        <a href="https://cultivador96.github.io/Patio-Verde/blog.html" class="btn-secondary">
-  Aprender más
+<a href="#productos" class="btn-primary">
+Ver productos
 </a>
 
-      </div>
+<a href="blog.html" class="btn-secondary">
+Aprender más
+</a>
 
-      <div class="features">
+</div>
 
-        <div>
-          🚚 Envío rápido
-        </div>
+<div class="features">
 
-        <div>
-          🔒 Pago seguro
-        </div>
+<div class="feature-item">
+<div class="feature-icon">🚚</div>
+<div>
+<strong>Envío rápido</strong><br>
+24/48h
+</div>
+</div>
 
-        <div>
-          🌱 Calidad premium
-        </div>
+<div class="feature-item">
+<div class="feature-icon">🔒</div>
+<div>
+<strong>Pago seguro</strong><br>
+100% protegido
+</div>
+</div>
 
-      </div>
+<div class="feature-item">
+<div class="feature-icon">🌱</div>
+<div>
+<strong>Calidad</strong><br>
+Productos seleccionados
+</div>
+</div>
 
-    </div>
+</div>
 
-  </section>
+</div>
 
-  <section class="benefits">
+</section>
 
-    <div class="container">
+<section class="benefits">
 
-      <div class="section-title">
+<div class="container">
 
-        <h2>
-          Calidad superior para tu cultivo
-        </h2>
+<div class="section-title">
 
-        <p>
-          Productos y recursos seleccionados
-          para ofrecerte mejores resultados.
-        </p>
+<h2>
+Calidad superior para tu cultivo
+</h2>
 
-      </div>
+<p>
+Productos y recursos seleccionados para ofrecerte mejores resultados.
+</p>
 
-      <div class="cards">
+</div>
 
-        <div class="card">
+<div class="cards">
 
-          <div class="icon">
-            🚚
-          </div>
+<div class="card">
 
-          <div>
+<div class="icon">
+🚚
+</div>
 
-            <h3>Envío 24/48h</h3>
+<h3>
+Envío 24/48h
+</h3>
 
-            <p>
-              Recibe tus productos rápidamente.
-            </p>
+<p>
+Recibe tus productos rápidamente.
+</p>
 
-          </div>
+</div>
 
-        </div>
+<div class="card">
 
-        <div class="card">
+<div class="icon">
+📦
+</div>
 
-          <div class="icon">
-            📦
-          </div>
+<h3>
+Discreción total
+</h3>
 
-          <div>
+<p>
+Envíos seguros y protegidos.
+</p>
 
-            <h3>Discreción total</h3>
+</div>
 
-            <p>
-              Envíos seguros y protegidos.
-            </p>
+<div class="card">
 
-          </div>
+<div class="icon">
+🔒
+</div>
 
-        </div>
+<h3>
+Pago seguro
+</h3>
 
-        <div class="card">
+<p>
+Múltiples métodos de pago.
+</p>
 
-          <div class="icon">
-            🔒
-          </div>
+</div>
 
-          <div>
+</div>
 
-            <h3>Pago seguro</h3>
+</div>
 
-            <p>
-              Múltiples métodos de pago.
-            </p>
+</section>
 
-          </div>
+<section class="quick-links">
 
-        </div>
+<div class="container">
 
-      </div>
+<div class="quick-box">
 
-    </div>
+<div class="quick-left">
 
-  </section>
+<h2>
+Empieza Hoy
+</h2>
 
-  <section class="quick-links">
+<ul>
 
-    <div class="container">
+<li>
+<a href="#">
+🛒 Comprar iluminación LED para cultivo
+</a>
+<span>→</span>
+</li>
 
-      <div class="quick-box">
+<li>
+<a href="#">
+🛒 Ver fertilizantes y nutrientes premium
+</a>
+<span>→</span>
+</li>
 
-        <h2>Empieza Hoy</h2>
+<li>
+<a href="#">
+🛒 Descubrir sistemas de ventilación
+</a>
+<span>→</span>
+</li>
 
-        <ul>
+<li>
+<a href="#">
+🛒 Explorar herramientas agrícolas modernas
+</a>
+<span>→</span>
+</li>
 
-          <li>
-            🛒 Comprar semillas marihuana
-          </li>
+<li>
+<a href="blog.html">
+📚 Aprender técnicas modernas de cultivo
+</a>
+<span>→</span>
+</li>
 
-          <li>
-            🛒 Comprar CBD
-          </li>
+</ul>
 
-          <li>
-            🛒 Comprar fertilizantes para marihuana
-          </li>
+</div>
 
-          <li>
-            🛒 Comprar iluminación para cultivo
-          </li>
+<div class="quick-right">
 
-          <li>
-            📚 Aprender del cultivo de semillas
-          </li>
+<img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=1974&auto=format&fit=crop">
 
-        </ul>
+</div>
 
-      </div>
+</div>
 
-    </div>
+</div>
 
-  </section>
+</section>
 
-  <section class="products">
+<section class="products" id="productos">
 
-    <div class="container">
+<div class="container">
 
-      <div class="section-title">
+<div class="section-title">
 
-        <h2>
-          Productos destacados
-        </h2>
+<h2>
+Productos destacados
+</h2>
 
-        <p>
-          Herramientas y recursos seleccionados para mejorar tus cultivos.
-        </p>
+<p>
+Equipamiento y herramientas para agricultura moderna y cultivo interior.
+</p>
 
-      </div>
+</div>
 
-      <div class="product-grid">
+<div class="product-grid">
 
-        <div class="product-card">
+<div class="product-card">
 
-          <img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?q=80&w=1974&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?q=80&w=1974&auto=format&fit=crop">
 
-          <h3>
-            Iluminación LED
-          </h3>
+<div class="product-info">
 
-          <p>
-            Sistemas eficientes para cultivo interior.
-          </p>
+<span class="product-tag">
+ILUMINACIÓN
+</span>
 
-          <a href="#">
-            Ver producto
-          </a>
+<h3>
+Panel LED Full Spectrum
+</h3>
 
-        </div>
+<p>
+Sistema de iluminación eficiente para espacios de cultivo interior.
+</p>
 
-        <div class="product-card">
+<div class="product-bottom">
 
-          <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2070&auto=format&fit=crop">
+<span class="price">
+129€
+</span>
 
-          <h3>
-            Fertilizantes
-          </h3>
+<a href="#">
+Ver más
+</a>
 
-          <p>
-            Nutrientes premium para agricultura moderna.
-          </p>
+</div>
 
-          <a href="#">
-            Ver producto
-          </a>
+</div>
 
-        </div>
+</div>
 
-        <div class="product-card">
+<div class="product-card">
 
-          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1974&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2070&auto=format&fit=crop">
 
-          <h3>
-            Semillas premium
-          </h3>
+<div class="product-info">
 
-          <p>
-            Selección de alta calidad para cultivo.
-          </p>
+<span class="product-tag">
+NUTRIENTES
+</span>
 
-          <a href="#">
-            Ver producto
-          </a>
+<h3>
+Fertilizantes premium
+</h3>
 
-        </div>
+<p>
+Nutrientes diseñados para mejorar el crecimiento y la productividad.
+</p>
 
-      </div>
+<div class="product-bottom">
 
-    </div>
+<span class="price">
+39€
+</span>
 
-  </section>
+<a href="#">
+Ver más
+</a>
 
-  <section class="reviews">
+</div>
 
-    <div class="container">
+</div>
 
-      <div class="section-title">
+</div>
 
-        <h2>
-          Opiniones de clientes
-        </h2>
+<div class="product-card">
 
-        <p>
-          Miles de cultivadores ya confían en Patio-Verde.
-        </p>
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1974&auto=format&fit=crop">
 
-      </div>
+<div class="product-info">
 
-      <div class="review-grid">
+<span class="product-tag">
+CULTIVO
+</span>
 
-        <div class="review-card">
+<h3>
+Kit de cultivo básico
+</h3>
 
-          <div class="stars">
-            ⭐⭐⭐⭐⭐
-          </div>
+<p>
+Todo lo necesario para empezar un cultivo doméstico eficiente.
+</p>
 
-          <p>
-            “Muy buena calidad y envío rapidísimo.”
-          </p>
+<div class="product-bottom">
 
-          <span>
-            — Carlos M.
-          </span>
+<span class="price">
+89€
+</span>
 
-        </div>
+<a href="#">
+Ver más
+</a>
 
-        <div class="review-card">
+</div>
 
-          <div class="stars">
-            ⭐⭐⭐⭐⭐
-          </div>
+</div>
 
-          <p>
-            “El catálogo es súper profesional y fácil de usar.”
-          </p>
+</div>
 
-          <span>
-            — Marta P.
-          </span>
+</div>
 
-        </div>
+</div>
 
-        <div class="review-card">
+</section>
 
-          <div class="stars">
-            ⭐⭐⭐⭐⭐
-          </div>
+<section class="reviews">
 
-          <p>
-            “Todo llegó perfecto y muy bien protegido.”
-          </p>
+<div class="container">
 
-          <span>
-            — David R.
-          </span>
+<div class="section-title">
 
-        </div>
+<h2>
+Opiniones de clientes
+</h2>
 
-      </div>
+<p>
+Miles de cultivadores ya confían en Patio-Verde.
+</p>
 
-    </div>
+</div>
 
-  </section>
+<div class="review-grid">
+
+<div class="review-card">
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<p>
+“Muy buena experiencia. El envío llegó rápido y el material venía perfectamente protegido.”
+</p>
+
+<span>
+— Carlos M.
+</span>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<p>
+“La web tiene muchísima información útil y el catálogo está muy bien organizado.”
+</p>
+
+<span>
+— Marta P.
+</span>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<p>
+“Todo muy profesional. Excelente atención y productos de muy buena calidad.”
+</p>
+
+<span>
+— David R.
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Patio-Verde — Todos los derechos reservados.
+</footer>
 
 </body>
 
