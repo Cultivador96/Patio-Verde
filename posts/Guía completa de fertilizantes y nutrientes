@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guía completa de fertilizantes y nutrientes | Patio-Verde</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f5f5f5;
+color:#17351f;
+line-height:1.8;
+}
+
+.container{
+width:90%;
+max-width:900px;
+margin:auto;
+}
+
+header{
+background:#07150b;
+padding:25px 0;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:white;
+font-size:2rem;
+font-weight:800;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#8fcf9f;
+}
+
+.hero{
+background:linear-gradient(rgba(7,21,11,0.75),rgba(7,21,11,0.75)),
+url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+padding:120px 0;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:20px;
+font-weight:800;
+line-height:1.2;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+opacity:0.95;
+}
+
+.article{
+background:white;
+padding:60px;
+margin-top:-40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+margin-bottom:60px;
+}
+
+.article h2{
+font-size:2rem;
+margin-top:50px;
+margin-bottom:20px;
+color:#0d2414;
+font-weight:800;
+}
+
+.article h3{
+font-size:1.4rem;
+margin-top:35px;
+margin-bottom:15px;
+color:#17351f;
+font-weight:700;
+}
+
+.article p{
+margin-bottom:20px;
+color:#2b2b2b;
+}
+
+.article ul{
+margin-left:20px;
+margin-bottom:25px;
+}
+
+.article li{
+margin-bottom:10px;
+}
+
+.highlight{
+background:#eef8f0;
+padding:25px;
+border-left:5px solid #2e7d32;
+border-radius:12px;
+margin:30px 0;
+}
+
+footer{
+background:#07150b;
+padding:40px 0;
+text-align:center;
+color:white;
+margin-top:60px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.article{
+padding:30px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container navbar">
+
+<div class="logo">Patio-Verde</div>
+
+<nav>
+<a href="#">Inicio</a>
+<a href="#">Artículos</a>
+<a href="#">Cultivo</a>
+<a href="#">Contacto</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Guía completa de fertilizantes y nutrientes</h1>
+
+<p>
+Descubre cómo mejorar el crecimiento de tus plantas mediante una nutrición equilibrada, fertilización adecuada y control eficiente de nutrientes.
+</p>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<article class="article">
+
+<p>
+Los fertilizantes y nutrientes son elementos fundamentales en cualquier sistema de cultivo moderno. Una correcta nutrición vegetal permite mejorar el crecimiento, aumentar la productividad y mantener plantas más saludables durante todas las etapas de desarrollo.
+</p>
+
+<p>
+Comprender cómo funcionan los nutrientes y aprender a utilizarlos correctamente puede marcar una gran diferencia en la calidad final del cultivo.
+</p>
+
+<h2>¿Qué son los fertilizantes?</h2>
+
+<p>
+Los fertilizantes son productos diseñados para aportar nutrientes esenciales que las plantas necesitan para desarrollarse correctamente.
+</p>
+
+<p>
+En la naturaleza, las plantas obtienen estos elementos del suelo y de la materia orgánica. Sin embargo, en cultivos modernos o en espacios controlados, es habitual complementar la nutrición mediante fertilizantes específicos.
+</p>
+
+<div class="highlight">
+
+<p><strong>Objetivos principales de la fertilización:</strong></p>
+
+<ul>
+<li>Favorecer un crecimiento equilibrado</li>
+<li>Fortalecer raíces</li>
+<li>Mejorar la absorción de agua</li>
+<li>Optimizar el desarrollo vegetal</li>
+<li>Mantener plantas saludables</li>
+</ul>
+
+</div>
+
+<h2>Nutrientes esenciales para las plantas</h2>
+
+<p>
+Los nutrientes se dividen principalmente en macronutrientes y micronutrientes.
+</p>
+
+<h3>Macronutrientes</h3>
+
+<p>
+Son los elementos que la planta necesita en mayor cantidad.
+</p>
+
+<h3>Nitrógeno (N)</h3>
+
+<p>
+El nitrógeno participa en el crecimiento vegetativo y en la producción de clorofila.
+</p>
+
+<ul>
+<li>Desarrollo de hojas</li>
+<li>Crecimiento de tallos</li>
+<li>Color verde saludable</li>
+<li>Producción de proteínas</li>
+</ul>
+
+<h3>Fósforo (P)</h3>
+
+<p>
+El fósforo es importante para el desarrollo radicular y la transferencia energética.
+</p>
+
+<ul>
+<li>Fortalecimiento de raíces</li>
+<li>Mejora de la floración</li>
+<li>Desarrollo estructural</li>
+<li>Resistencia vegetal</li>
+</ul>
+
+<h3>Potasio (K)</h3>
+
+<p>
+El potasio interviene en numerosos procesos metabólicos de la planta.
+</p>
+
+<ul>
+<li>Regula la absorción de agua</li>
+<li>Mejora la resistencia ambiental</li>
+<li>Fortalece tejidos</li>
+<li>Optimiza el transporte de nutrientes</li>
+</ul>
+
+<h2>Micronutrientes</h2>
+
+<p>
+Aunque se necesitan en cantidades menores, son igualmente importantes.
+</p>
+
+<ul>
+<li>Calcio</li>
+<li>Magnesio</li>
+<li>Hierro</li>
+<li>Zinc</li>
+<li>Manganeso</li>
+<li>Cobre</li>
+<li>Boro</li>
+</ul>
+
+<p>
+Una deficiencia de micronutrientes puede provocar hojas amarillas, crecimiento lento, debilidad estructural y desequilibrios nutricionales.
+</p>
+
+<h2>Tipos de fertilizantes</h2>
+
+<h3>Fertilizantes orgánicos</h3>
+
+<p>
+Proceden de materiales naturales como compost, humus, extractos vegetales y materia orgánica.
+</p>
+
+<ul>
+<li>Liberación gradual</li>
+<li>Mejora del suelo</li>
+<li>Menor impacto ambiental</li>
+<li>Microbiología más activa</li>
+</ul>
+
+<h3>Fertilizantes minerales</h3>
+
+<p>
+Se elaboran mediante procesos industriales y permiten un control nutricional más preciso.
+</p>
+
+<ul>
+<li>Absorción rápida</li>
+<li>Dosificación exacta</li>
+<li>Control técnico</li>
+<li>Resultados inmediatos</li>
+</ul>
+
+<h3>Fertilizantes líquidos</h3>
+
+<p>
+Muy utilizados en agricultura moderna debido a su facilidad de aplicación.
+</p>
+
+<ul>
+<li>Mezcla sencilla</li>
+<li>Absorción eficiente</li>
+<li>Automatización del riego</li>
+<li>Ajustes rápidos</li>
+</ul>
+
+<h2>Importancia del pH y la conductividad</h2>
+
+<p>
+La nutrición vegetal no depende únicamente de la cantidad de fertilizante. También es importante controlar el pH y la electroconductividad.
+</p>
+
+<h3>pH</h3>
+
+<p>
+El pH influye directamente en la capacidad de absorción de nutrientes. Cuando el pH está fuera de rango pueden aparecer bloqueos nutricionales y reducirse la eficiencia del cultivo.
+</p>
+
+<h3>Electroconductividad (EC)</h3>
+
+<p>
+La EC mide la concentración de sales y nutrientes presentes en el agua o solución nutritiva.
+</p>
+
+<ul>
+<li>Estrés radicular</li>
+<li>Acumulación de sales</li>
+<li>Sobre fertilización</li>
+</ul>
+
+<h2>Cómo aplicar fertilizantes correctamente</h2>
+
+<ul>
+<li>Seguir las dosis recomendadas</li>
+<li>Observar las hojas regularmente</li>
+<li>Ajustar según la etapa de crecimiento</li>
+<li>Mantener una frecuencia estable</li>
+</ul>
+
+<p>
+Aplicar más fertilizante no siempre significa mejores resultados. El exceso nutricional puede resultar perjudicial para las plantas.
+</p>
+
+<h2>Errores frecuentes en la fertilización</h2>
+
+<ul>
+<li>Sobre fertilización</li>
+<li>Mezclar productos incompatibles</li>
+<li>No controlar el pH</li>
+<li>Usar agua de mala calidad</li>
+<li>Aplicar nutrientes sin planificación</li>
+<li>No revisar el drenaje</li>
+</ul>
+
+<h2>Tecnología y nutrición agrícola moderna</h2>
+
+<p>
+La agricultura moderna incorpora herramientas tecnológicas para mejorar la gestión nutricional.
+</p>
+
+<ul>
+<li>Medidores digitales</li>
+<li>Sensores de EC y pH</li>
+<li>Sistemas automatizados</li>
+<li>Control remoto</li>
+<li>Aplicaciones de monitorización</li>
+</ul>
+
+<h2>Beneficios de una nutrición equilibrada</h2>
+
+<ul>
+<li>Crecimiento uniforme</li>
+<li>Raíces más fuertes</li>
+<li>Mejor absorción de agua</li>
+<li>Mayor estabilidad ambiental</li>
+<li>Reducción de carencias</li>
+<li>Plantas más saludables</li>
+<li>Optimización del rendimiento</li>
+</ul>
+
+<h2>Reflexión final sobre la nutrición vegetal</h2>
+
+<p>
+Los fertilizantes y nutrientes desempeñan un papel esencial en cualquier sistema de cultivo moderno. Comprender cómo funcionan y aprender a utilizarlos correctamente permite mejorar significativamente el desarrollo vegetal y la estabilidad del cultivo.
+</p>
+
+<p>
+La combinación de una nutrición equilibrada, un buen control del pH y una correcta gestión ambiental ayuda a crear espacios agrícolas más productivos, sostenibles y preparados para las necesidades actuales de la agricultura moderna.
+</p>
+
+</article>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<p>© 2026 Patio-Verde · Agricultura moderna y sostenible</p>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>
