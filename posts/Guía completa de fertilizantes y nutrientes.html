@@ -36,32 +36,64 @@ margin:auto;
 }
 
 header{
-background:#07150b;
-padding:25px 0;
+width:100%;
+position:sticky;
+top:0;
+z-index:999;
 }
 
-.navbar{
+.topbar{
+background:#07150b;
+padding:18px 0;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+}
+
+.topbar-content{
 display:flex;
 justify-content:space-between;
 align-items:center;
 }
 
-.logo{
+.logo a{
 color:white;
 font-size:2rem;
 font-weight:800;
+text-decoration:none;
+letter-spacing:-1px;
+}
+
+nav{
+display:flex;
+align-items:center;
+gap:28px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:30px;
 font-weight:500;
+font-size:0.95rem;
 transition:0.3s;
+position:relative;
 }
 
 nav a:hover{
 color:#8fcf9f;
+}
+
+nav a::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#8fcf9f;
+transition:0.3s;
+}
+
+nav a:hover::after{
+width:100%;
 }
 
 .hero{
@@ -153,8 +185,19 @@ font-size:2.2rem;
 padding:30px;
 }
 
+.topbar-content{
+flex-direction:column;
+gap:15px;
+}
+
 nav{
-display:none;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.logo a{
+font-size:1.7rem;
 }
 
 }
@@ -167,16 +210,23 @@ display:none;
 
 <header>
 
-<div class="container navbar">
+<div class="topbar">
 
-<div class="logo">Patio-Verde</div>
+<div class="container topbar-content">
+
+<div class="logo">
+<a href="../index.html">Patio-Verde</a>
+</div>
 
 <nav>
-<a href="#">Inicio</a>
-<a href="#">Artículos</a>
+<a href="../index.html">Inicio</a>
 <a href="#">Cultivo</a>
+<a href="#">Agricultura</a>
+<a href="#">Guías</a>
 <a href="#">Contacto</a>
 </nav>
+
+</div>
 
 </div>
 
