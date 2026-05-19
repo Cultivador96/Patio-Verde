@@ -46,10 +46,11 @@ justify-content:space-between;
 align-items:center;
 }
 
-.logo{
+.logo a{
 color:white;
 font-size:2rem;
 font-weight:800;
+text-decoration:none;
 }
 
 nav a{
@@ -57,120 +58,122 @@ color:white;
 text-decoration:none;
 margin-left:30px;
 font-weight:500;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#8fcf9f;
 }
 
 .hero{
-background:linear-gradient(rgba(7,21,11,0.75),rgba(7,21,11,0.75)),
-url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=1600&auto=format&fit=crop');
+
+height:500px;
+
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2070&auto=format&fit=crop');
+
 background-size:cover;
 background-position:center;
-padding:120px 0;
-color:white;
+
+display:flex;
+align-items:center;
 text-align:center;
+
+color:white;
+
+}
+
+.hero-content{
+width:100%;
 }
 
 .hero h1{
-font-size:3rem;
+font-size:4rem;
 margin-bottom:20px;
-font-weight:800;
-line-height:1.2;
 }
 
 .hero p{
 font-size:1.2rem;
 max-width:700px;
 margin:auto;
-opacity:0.95;
 }
 
 .article{
 background:white;
-padding:60px;
-margin-top:-40px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-margin-bottom:60px;
+padding:70px;
+margin-top:-80px;
+position:relative;
+z-index:10;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+margin-bottom:80px;
 }
 
 .article h2{
+margin:40px 0 20px;
 font-size:2rem;
-margin-top:50px;
-margin-bottom:20px;
-color:#0d2414;
-font-weight:800;
 }
 
 .article h3{
+margin:30px 0 15px;
 font-size:1.4rem;
-margin-top:35px;
-margin-bottom:15px;
-color:#17351f;
-font-weight:700;
 }
 
 .article p{
 margin-bottom:20px;
-color:#2b2b2b;
+color:#444;
 }
 
 .article ul{
-margin-left:20px;
 margin-bottom:25px;
+padding-left:25px;
+color:#444;
 }
 
 .article li{
 margin-bottom:10px;
 }
 
+.article img{
+width:100%;
+border-radius:20px;
+margin:30px 0;
+}
+
+.article a{
+color:#1d6b3c;
+font-weight:600;
+text-decoration:none;
+}
+
 .highlight{
 background:#eef8f0;
 padding:25px;
 border-left:5px solid #2e7d32;
-border-radius:12px;
+border-radius:15px;
 margin:30px 0;
 }
 
-.article-image{
-width:100%;
-border-radius:18px;
-margin:35px 0;
-box-shadow:0 8px 25px rgba(0,0,0,0.12);
-}
-
 .image-caption{
-font-size:0.95rem;
-color:#5b5b5b;
-margin-top:-15px;
-margin-bottom:30px;
+font-size:.95rem;
+color:#666;
 text-align:center;
+margin-top:-10px;
+margin-bottom:30px;
 font-style:italic;
 }
 
 footer{
 background:#07150b;
-padding:40px 0;
-text-align:center;
 color:white;
-margin-top:60px;
+text-align:center;
+padding:40px 0;
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
 
 .hero h1{
-font-size:2.2rem;
+font-size:2.5rem;
 }
 
 .article{
-padding:30px;
-}
-
-nav{
-display:none;
+padding:35px;
 }
 
 }
@@ -185,13 +188,13 @@ display:none;
 
 <div class="container navbar">
 
-<div class="logo">Patio-Verde</div>
+<div class="logo">
+<a href="../index.html">🌿 Patio-Verde</a>
+</div>
 
 <nav>
-<a href="#">Inicio</a>
-<a href="#">Artículos</a>
-<a href="#">Cultivo</a>
-<a href="#">Contacto</a>
+<a href="../index.html">Inicio</a>
+<a href="../blog.html">Blog</a>
 </nav>
 
 </div>
@@ -200,9 +203,11 @@ display:none;
 
 <section class="hero">
 
-<div class="container">
+<div class="container hero-content">
 
-<h1>Consejos para principiantes en horticultura urbana</h1>
+<h1>
+Consejos para principiantes en horticultura urbana
+</h1>
 
 <p>
 Aprende cómo empezar tu propio huerto urbano de forma sencilla y descubre los mejores consejos para cultivar plantas en pequeños espacios.
@@ -212,7 +217,7 @@ Aprende cómo empezar tu propio huerto urbano de forma sencilla y descubre los m
 
 </section>
 
-<section class="container">
+<div class="container">
 
 <article class="article">
 
@@ -224,13 +229,15 @@ La horticultura urbana se ha convertido en una excelente alternativa para quiene
 Si estás empezando desde cero, existen algunos consejos básicos que pueden ayudarte a crear un espacio verde funcional, sostenible y fácil de mantener.
 </p>
 
-<img class="article-image" src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?q=80&w=1400&auto=format&fit=crop" alt="Huerto urbano en balcón">
+<img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?q=80&w=1400&auto=format&fit=crop" alt="Huerto urbano en balcón">
 
 <p class="image-caption">
 Pequeños balcones y terrazas pueden convertirse en auténticos espacios verdes urbanos.
 </p>
 
-<h2>¿Qué es la horticultura urbana?</h2>
+<h2>
+¿Qué es la horticultura urbana?
+</h2>
 
 <p>
 La horticultura urbana consiste en cultivar plantas y alimentos en espacios urbanos utilizando macetas, jardineras, huertos verticales o mesas de cultivo.
@@ -245,33 +252,48 @@ Además de aportar alimentos frescos, este tipo de cultivo ayuda a mejorar el bi
 <p><strong>Beneficios principales de la horticultura urbana:</strong></p>
 
 <ul>
-<li>Aprovechamiento de pequeños espacios</li>
-<li>Producción de alimentos frescos</li>
-<li>Reducción del estrés</li>
-<li>Mayor contacto con la naturaleza</li>
-<li>Hábitos más sostenibles</li>
+
+<li>Aprovechamiento de pequeños espacios.</li>
+
+<li>Producción de alimentos frescos.</li>
+
+<li>Reducción del estrés.</li>
+
+<li>Mayor contacto con la naturaleza.</li>
+
+<li>Hábitos más sostenibles.</li>
+
 </ul>
 
 </div>
 
-<h2>Elige un espacio con buena iluminación</h2>
+<h2>
+Elige un espacio con buena iluminación
+</h2>
 
 <p>
 La mayoría de las plantas necesitan varias horas de luz solar directa para crecer correctamente. Antes de empezar, observa cómo entra la luz en tu balcón, terraza o ventana.
 </p>
 
 <ul>
-<li>Balcones orientados al sur</li>
-<li>Terrazas con buena ventilación</li>
-<li>Ventanas luminosas</li>
-<li>Patios con suficiente claridad</li>
+
+<li>Balcones orientados al sur.</li>
+
+<li>Terrazas con buena ventilación.</li>
+
+<li>Ventanas luminosas.</li>
+
+<li>Patios con suficiente claridad.</li>
+
 </ul>
 
 <p>
 Si el espacio tiene poca luz natural, puedes optar por plantas más resistentes y fáciles de mantener.
 </p>
 
-<h2>Empieza con cultivos sencillos</h2>
+<h2>
+Empieza con cultivos sencillos
+</h2>
 
 <p>
 Uno de los errores más comunes entre principiantes es intentar cultivar demasiadas variedades desde el principio.
@@ -281,50 +303,73 @@ Uno de los errores más comunes entre principiantes es intentar cultivar demasia
 Lo más recomendable es comenzar con plantas fáciles y resistentes.
 </p>
 
-<h3>Plantas recomendadas para principiantes</h3>
+<h3>
+Plantas recomendadas para principiantes
+</h3>
 
 <ul>
-<li>Tomates cherry</li>
-<li>Lechuga</li>
-<li>Albahaca</li>
-<li>Menta</li>
-<li>Perejil</li>
-<li>Rábanos</li>
-<li>Espinacas</li>
+
+<li>Tomates cherry.</li>
+
+<li>Lechuga.</li>
+
+<li>Albahaca.</li>
+
+<li>Menta.</li>
+
+<li>Perejil.</li>
+
+<li>Rábanos.</li>
+
+<li>Espinacas.</li>
+
 </ul>
 
-<img class="article-image" src="https://www.paxinasgalegas.es/imagenes/verduras-y-productos-horticolas-meis_img435t6m0w1200h1200.jpg" alt="Cultivo urbano en macetas">
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1400&auto=format&fit=crop" alt="Cultivo urbano en macetas">
 
 <p class="image-caption">
 Las macetas y jardineras permiten cultivar verduras y plantas aromáticas fácilmente en casa.
 </p>
 
-<h2>Utiliza macetas y sustratos adecuados</h2>
+<h2>
+Utiliza macetas y sustratos adecuados
+</h2>
 
 <p>
 El recipiente y la calidad del sustrato influyen directamente en el desarrollo de las plantas.
 </p>
 
-<h3>Macetas</h3>
+<h3>
+Macetas
+</h3>
 
 <p>
 Las macetas deben tener agujeros de drenaje para evitar acumulaciones excesivas de agua.
 </p>
 
-<h3>Sustrato</h3>
+<h3>
+Sustrato
+</h3>
 
 <p>
 Un sustrato de calidad permite mantener una buena aireación y facilita la absorción de nutrientes.
 </p>
 
 <ul>
-<li>Sustrato universal</li>
-<li>Compost orgánico</li>
-<li>Humus de lombriz</li>
-<li>Fibra de coco</li>
+
+<li>Sustrato universal.</li>
+
+<li>Compost orgánico.</li>
+
+<li>Humus de lombriz.</li>
+
+<li>Fibra de coco.</li>
+
 </ul>
 
-<h2>Aprende a regar correctamente</h2>
+<h2>
+Aprende a regar correctamente
+</h2>
 
 <p>
 El exceso de agua es uno de los problemas más frecuentes en horticultura urbana.
@@ -335,13 +380,20 @@ La mayoría de plantas prefieren un sustrato húmedo pero no encharcado.
 </p>
 
 <ul>
-<li>Revisar la humedad antes de regar</li>
-<li>Regar temprano o al atardecer</li>
-<li>Evitar acumulaciones de agua</li>
-<li>Ajustar el riego según la temperatura</li>
+
+<li>Revisar la humedad antes de regar.</li>
+
+<li>Regar temprano o al atardecer.</li>
+
+<li>Evitar acumulaciones de agua.</li>
+
+<li>Ajustar el riego según la temperatura.</li>
+
 </ul>
 
-<h2>Aprovecha los huertos verticales</h2>
+<h2>
+Aprovecha los huertos verticales
+</h2>
 
 <p>
 Cuando el espacio es limitado, los huertos verticales permiten cultivar más plantas ocupando menos superficie.
@@ -351,26 +403,37 @@ Cuando el espacio es limitado, los huertos verticales permiten cultivar más pla
 Puedes utilizar estructuras recicladas, estanterías o sistemas colgantes para crear un jardín urbano funcional y decorativo.
 </p>
 
-<h2>Protege las plantas de plagas</h2>
+<h2>
+Protege las plantas de plagas
+</h2>
 
 <p>
 Aunque los huertos urbanos suelen tener menos plagas que los cultivos tradicionales, es importante revisar regularmente las hojas y tallos.
 </p>
 
-<h3>Plagas más comunes</h3>
+<h3>
+Plagas más comunes
+</h3>
 
 <ul>
-<li>Pulgones</li>
-<li>Mosca blanca</li>
-<li>Araña roja</li>
-<li>Caracoles</li>
+
+<li>Pulgones.</li>
+
+<li>Mosca blanca.</li>
+
+<li>Araña roja.</li>
+
+<li>Caracoles.</li>
+
 </ul>
 
 <p>
 Para prevenir problemas puedes mejorar la ventilación y utilizar soluciones naturales como jabón potásico o aceite de neem.
 </p>
 
-<h2>Ten paciencia y disfruta del proceso</h2>
+<h2>
+Ten paciencia y disfruta del proceso
+</h2>
 
 <p>
 La horticultura urbana requiere observación y constancia. Algunas plantas crecerán más rápido que otras y cada cultivo tiene necesidades diferentes.
@@ -380,18 +443,30 @@ La horticultura urbana requiere observación y constancia. Algunas plantas crece
 Lo más importante es aprender poco a poco y disfrutar del proceso de cuidar las plantas diariamente.
 </p>
 
-<h2>Beneficios de cultivar en casa</h2>
+<h2>
+Beneficios de cultivar en casa
+</h2>
 
 <ul>
-<li>Mayor bienestar emocional</li>
-<li>Consumo de alimentos frescos</li>
-<li>Decoración natural del hogar</li>
-<li>Reducción del estrés</li>
-<li>Hábitos más sostenibles</li>
-<li>Conexión con la naturaleza</li>
+
+<li>Mayor bienestar emocional.</li>
+
+<li>Consumo de alimentos frescos.</li>
+
+<li>Decoración natural del hogar.</li>
+
+<li>Reducción del estrés.</li>
+
+<li>Hábitos más sostenibles.</li>
+
+<li>Conexión con la naturaleza.</li>
+
 </ul>
 
-<h2>Creando tu propio oasis verde urbano</h2>
+<h2>
+Creando tu propio oasis verde urbano
+</h2>
+
 <p>
 Iniciarse en la horticultura urbana es más sencillo de lo que parece. Con unas pocas macetas, un buen sustrato y plantas fáciles de cuidar, cualquier persona puede crear su propio espacio verde en casa.
 </p>
@@ -402,16 +477,10 @@ La clave está en comenzar poco a poco, observar las necesidades de cada planta 
 
 </article>
 
-</section>
-
-<footer>
-
-<div class="container">
-
-<p>© 2026 Patio-Verde · Agricultura moderna y sostenible</p>
-
 </div>
 
+<footer>
+© 2026 Patio-Verde — Todos los derechos reservados.
 </footer>
 
 </body>
