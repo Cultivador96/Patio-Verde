@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Guía completa de fertilizantes y nutrientes | Patio-Verde</title>
+<title>Patio-Verde</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,31 +22,45 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:'Inter',sans-serif;
 background:#f5f5f5;
 color:#17351f;
-line-height:1.8;
 }
 
 .container{
 width:90%;
-max-width:900px;
+max-width:1300px;
 margin:auto;
 }
 
-header{
+.topbar{
 background:#07150b;
-padding:25px 0;
+color:white;
+text-align:center;
+padding:12px;
+font-size:.95rem;
+font-weight:500;
+}
+
+header{
+position:absolute;
+width:100%;
+z-index:100;
 }
 
 .navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:30px 0;
 }
 
-.logo a{
+.logo{
 color:white;
 font-size:2rem;
 font-weight:800;
@@ -56,98 +70,343 @@ text-decoration:none;
 nav a{
 color:white;
 text-decoration:none;
-margin-left:30px;
+margin-left:35px;
 font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#8dff63;
 }
 
 .hero{
 
-height:500px;
+height:100vh;
 
 background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2070&auto=format&fit=crop');
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=2070&auto=format&fit=crop');
 
 background-size:cover;
 background-position:center;
 
 display:flex;
 align-items:center;
-text-align:center;
-
-color:white;
 
 }
 
 .hero-content{
-width:100%;
+color:white;
+max-width:700px;
+}
+
+.subtitle{
+color:#8dff63;
+font-weight:700;
+letter-spacing:2px;
+font-size:1rem;
 }
 
 .hero h1{
-font-size:4rem;
-margin-bottom:20px;
+font-size:5rem;
+line-height:1.05;
+margin:25px 0;
+font-weight:800;
+}
+
+.hero h1 span{
+color:#8dff63;
 }
 
 .hero p{
 font-size:1.2rem;
+line-height:1.8;
+margin-bottom:40px;
+max-width:600px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+margin-bottom:45px;
+}
+
+.btn-primary,
+.btn-secondary{
+
+padding:18px 34px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+
+}
+
+.btn-primary{
+background:#8dff63;
+color:#13210f;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-secondary{
+border:1px solid rgba(255,255,255,.5);
+color:white;
+}
+
+.btn-secondary:hover{
+background:white;
+color:#13210f;
+}
+
+.features{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+color:white;
+margin-top:10px;
+}
+
+.feature-item{
+display:flex;
+align-items:center;
+gap:14px;
+}
+
+.feature-icon{
+font-size:1.8rem;
+color:#8dff63;
+}
+
+.benefits,
+.quick-links,
+.products,
+.reviews{
+padding:110px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:3.2rem;
+margin-bottom:20px;
+color:#17351f;
+}
+
+.section-title p{
+color:#666;
+font-size:1.1rem;
+line-height:1.8;
 max-width:700px;
 margin:auto;
 }
 
-.article{
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+
 background:white;
-padding:70px;
-margin-top:-80px;
-position:relative;
-z-index:10;
-border-radius:30px;
+padding:45px;
+border-radius:24px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+
 box-shadow:0 10px 30px rgba(0,0,0,.06);
-margin-bottom:80px;
+
+transition:.3s;
+
 }
 
-.article h2{
-margin:40px 0 20px;
+.card:hover{
+transform:translateY(-8px);
+}
+
+.icon{
+
+width:90px;
+height:90px;
+
+border-radius:50%;
+background:#edf9e6;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
 font-size:2rem;
-}
-
-.article h3{
-margin:30px 0 15px;
-font-size:1.4rem;
-}
-
-.article p{
-margin-bottom:20px;
-color:#444;
-}
-
-.article ul{
 margin-bottom:25px;
-padding-left:25px;
-color:#444;
+
 }
 
-.article li{
-margin-bottom:10px;
+.card h3{
+font-size:1.7rem;
+margin-bottom:15px;
 }
 
-.article img{
+.card p{
+line-height:1.8;
+color:#666;
+}
+
+.quick-box{
+
+background:#eef5e8;
+border-radius:30px;
+padding:60px;
+
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:40px;
+
+}
+
+.quick-left h2{
+font-size:3rem;
+color:#ef6f6f;
+margin-bottom:35px;
+}
+
+.quick-left ul{
+list-style:none;
+}
+
+.quick-left li{
+margin-bottom:30px;
+font-size:1.2rem;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding-bottom:15px;
+border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.quick-left a{
+text-decoration:none;
+color:#17351f;
+font-weight:500;
+transition:.3s;
+}
+
+.quick-left a:hover{
+color:#6edc47;
+}
+
+.quick-right img{
 width:100%;
 border-radius:20px;
-margin:30px 0;
 }
 
-.article a{
-color:#1d6b3c;
-font-weight:600;
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:white;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.product-card:hover{
+transform:translateY(-8px);
+}
+
+.product-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.product-info{
+padding:28px;
+}
+
+.product-tag{
+display:inline-block;
+background:#e7f8de;
+color:#17351f;
+padding:8px 14px;
+border-radius:30px;
+font-size:.8rem;
+font-weight:700;
+margin-bottom:18px;
+}
+
+.product-info h3{
+font-size:1.6rem;
+margin-bottom:14px;
+}
+
+.product-info p{
+color:#666;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.product-bottom{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.price{
+font-size:1.6rem;
+font-weight:800;
+}
+
+.product-bottom a{
+background:#8dff63;
+color:#13210f;
+padding:12px 22px;
+border-radius:40px;
 text-decoration:none;
+font-weight:700;
 }
 
-.highlight{
-background:#eef8f0;
-padding:25px;
-border-left:5px solid #2e7d32;
-border-radius:15px;
-margin:30px 0;
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.review-card{
+background:white;
+padding:45px;
+border-radius:24px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+text-align:center;
+}
+
+.stars{
+font-size:1.4rem;
+margin-bottom:20px;
+}
+
+.review-card p{
+line-height:1.9;
+margin-bottom:25px;
+color:#555;
+font-size:1.05rem;
+}
+
+.review-card span{
+font-weight:700;
 }
 
 footer{
@@ -155,16 +414,32 @@ background:#07150b;
 color:white;
 text-align:center;
 padding:40px 0;
+margin-top:60px;
 }
 
 @media(max-width:900px){
 
-.hero h1{
-font-size:2.5rem;
+.navbar{
+flex-direction:column;
+gap:20px;
 }
 
-.article{
-padding:35px;
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.buttons{
+flex-direction:column;
+}
+
+.quick-box{
+grid-template-columns:1fr;
 }
 
 }
@@ -175,17 +450,24 @@ padding:35px;
 
 <body>
 
+<div class="topbar">
+🌱 Envío gratis en pedidos superiores a 39€
+</div>
+
 <header>
 
 <div class="container navbar">
 
-<div class="logo">
-<a href="../index.html">🌿 Patio-Verde</a>
-</div>
+<a href="index.html" class="logo">
+🌿 Patio-Verde
+</a>
 
 <nav>
-<a href="../index.html">Inicio</a>
-<a href="../blog.html">Blog</a>
+<a href="#">Inicio</a>
+<a href="#productos">Productos</a>
+<a href="blog.html">Cultivo</a>
+<a href="blog.html">Recursos</a>
+<a href="#">Contacto</a>
 </nav>
 
 </div>
@@ -196,395 +478,398 @@ padding:35px;
 
 <div class="container hero-content">
 
+<span class="subtitle">
+CULTIVA TU FUTURO
+</span>
+
 <h1>
-Guía completa de fertilizantes y nutrientes
+Todo lo que necesitas
+para <span>tus cultivos</span>
 </h1>
 
 <p>
-Cómo mejorar el crecimiento de las plantas mediante una nutrición equilibrada y una correcta gestión de fertilizantes.
+Recursos, herramientas y conocimientos
+para agricultura moderna y sostenible.
 </p>
+
+<div class="buttons">
+
+<a href="#productos" class="btn-primary">
+Ver productos
+</a>
+
+<a href="blog.html" class="btn-secondary">
+Aprender más
+</a>
+
+</div>
+
+<div class="features">
+
+<div class="feature-item">
+<div class="feature-icon">🚚</div>
+<div>
+<strong>Envío rápido</strong><br>
+24/48h
+</div>
+</div>
+
+<div class="feature-item">
+<div class="feature-icon">🔒</div>
+<div>
+<strong>Pago seguro</strong><br>
+100% protegido
+</div>
+</div>
+
+<div class="feature-item">
+<div class="feature-icon">🌱</div>
+<div>
+<strong>Calidad</strong><br>
+Productos seleccionados
+</div>
+</div>
+
+</div>
 
 </div>
 
 </section>
 
+<section class="benefits">
+
 <div class="container">
 
-<article class="article">
-
-<p>
-Los fertilizantes y nutrientes son elementos fundamentales en cualquier sistema de cultivo moderno. Una correcta nutrición vegetal permite mejorar el crecimiento, aumentar la productividad y mantener plantas más saludables durante todas las etapas de desarrollo.
-</p>
-
-<p>
-Comprender cómo funcionan los nutrientes y aprender a utilizarlos correctamente puede marcar una gran diferencia en la calidad final del cultivo.
-</p>
-
-<p>
-Diversos estudios publicados en 
-<a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
-destacan la importancia de una fertilización equilibrada para mejorar la productividad agrícola y reducir deficiencias nutricionales en diferentes sistemas de cultivo.
-</p>
-
-<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2070&auto=format&fit=crop">
+<div class="section-title">
 
 <h2>
-¿Qué son los fertilizantes?
+Calidad superior para tu cultivo
 </h2>
 
 <p>
-Los fertilizantes son productos diseñados para aportar nutrientes esenciales que las plantas necesitan para desarrollarse correctamente.
+Productos y recursos seleccionados para ofrecerte mejores resultados.
 </p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">
+🚚
+</div>
+
+<h3>
+Envío 24/48h
+</h3>
 
 <p>
-En la naturaleza, las plantas obtienen estos elementos del suelo y de la materia orgánica. Sin embargo, en cultivos modernos o en espacios controlados, es habitual complementar la nutrición mediante fertilizantes específicos.
+Recibe tus productos rápidamente.
 </p>
 
-<div class="highlight">
+</div>
 
-<p><strong>Principales objetivos de la fertilización:</strong></p>
+<div class="card">
+
+<div class="icon">
+📦
+</div>
+
+<h3>
+Discreción total
+</h3>
+
+<p>
+Envíos seguros y protegidos.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+🔒
+</div>
+
+<h3>
+Pago seguro
+</h3>
+
+<p>
+Múltiples métodos de pago.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="quick-links">
+
+<div class="container">
+
+<div class="quick-box">
+
+<div class="quick-left">
+
+<h2>
+Empieza Hoy
+</h2>
 
 <ul>
 
-<li>Favorecer un crecimiento equilibrado.</li>
+<li>
+<a href="#">
+🛒 Comprar iluminación LED para cultivo
+</a>
+<span>→</span>
+</li>
 
-<li>Fortalecer las raíces.</li>
+<li>
+<a href="#">
+🛒 Ver fertilizantes y nutrientes premium
+</a>
+<span>→</span>
+</li>
 
-<li>Mejorar la absorción de agua.</li>
+<li>
+<a href="#">
+🛒 Descubrir sistemas de ventilación
+</a>
+<span>→</span>
+</li>
 
-<li>Optimizar el desarrollo vegetal.</li>
+<li>
+<a href="#">
+🛒 Explorar herramientas agrícolas modernas
+</a>
+<span>→</span>
+</li>
 
-<li>Mantener plantas saludables.</li>
+<li>
+<a href="blog.html">
+📚 Aprender técnicas modernas de cultivo
+</a>
+<span>→</span>
+</li>
 
 </ul>
 
 </div>
 
+<div class="quick-right">
+
+<img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=1974&auto=format&fit=crop">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="products" id="productos">
+
+<div class="container">
+
+<div class="section-title">
+
 <h2>
-Nutrientes esenciales para las plantas
+Productos destacados
 </h2>
 
 <p>
-Los nutrientes se dividen principalmente en macronutrientes y micronutrientes.
+Equipamiento y herramientas para agricultura moderna y cultivo interior.
 </p>
 
+</div>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?q=80&w=1974&auto=format&fit=crop">
+
+<div class="product-info">
+
+<span class="product-tag">
+ILUMINACIÓN
+</span>
+
 <h3>
-Macronutrientes
+Panel LED Full Spectrum
 </h3>
 
 <p>
-Son los elementos que la planta necesita en mayor cantidad para desarrollarse correctamente.
+Sistema de iluminación eficiente para espacios de cultivo interior.
 </p>
 
-<h3>
-Nitrógeno (N)
-</h3>
+<div class="product-bottom">
 
-<p>
-El nitrógeno participa en el crecimiento vegetativo y en la producción de clorofila.
-</p>
+<span class="price">
+129€
+</span>
 
-<ul>
-
-<li>Desarrollo de hojas.</li>
-
-<li>Crecimiento de tallos.</li>
-
-<li>Color verde saludable.</li>
-
-<li>Producción de proteínas.</li>
-
-</ul>
-
-<h3>
-Fósforo (P)
-</h3>
-
-<p>
-El fósforo es importante para el desarrollo radicular y la transferencia energética.
-</p>
-
-<ul>
-
-<li>Fortalecimiento de raíces.</li>
-
-<li>Mejora de la floración.</li>
-
-<li>Desarrollo estructural.</li>
-
-<li>Resistencia vegetal.</li>
-
-</ul>
-
-<h3>
-Potasio (K)
-</h3>
-
-<p>
-El potasio interviene en numerosos procesos metabólicos de la planta.
-</p>
-
-<ul>
-
-<li>Regulación de la absorción de agua.</li>
-
-<li>Mayor resistencia ambiental.</li>
-
-<li>Fortalecimiento de tejidos.</li>
-
-<li>Optimización del transporte de nutrientes.</li>
-
-</ul>
-
-<img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?q=80&w=2070&auto=format&fit=crop">
-
-<h2>
-Micronutrientes
-</h2>
-
-<p>
-Aunque las plantas necesitan menores cantidades de micronutrientes, estos siguen siendo esenciales para mantener un desarrollo equilibrado.
-</p>
-
-<ul>
-
-<li>Calcio.</li>
-
-<li>Magnesio.</li>
-
-<li>Hierro.</li>
-
-<li>Zinc.</li>
-
-<li>Manganeso.</li>
-
-<li>Cobre.</li>
-
-<li>Boro.</li>
-
-</ul>
-
-<p>
-Una deficiencia de micronutrientes puede provocar hojas amarillas, crecimiento lento y desequilibrios nutricionales.
-</p>
-
-<h2>
-Tipos de fertilizantes
-</h2>
-
-<h3>
-Fertilizantes orgánicos
-</h3>
-
-<p>
-Proceden de materiales naturales como compost, humus o extractos vegetales.
-</p>
-
-<ul>
-
-<li>Liberación gradual.</li>
-
-<li>Mejora del suelo.</li>
-
-<li>Menor impacto ambiental.</li>
-
-<li>Mayor actividad microbiológica.</li>
-
-</ul>
-
-<h3>
-Fertilizantes minerales
-</h3>
-
-<p>
-Se elaboran mediante procesos industriales y permiten un control nutricional más preciso.
-</p>
-
-<ul>
-
-<li>Absorción rápida.</li>
-
-<li>Dosificación exacta.</li>
-
-<li>Resultados inmediatos.</li>
-
-<li>Control técnico.</li>
-
-</ul>
-
-<h3>
-Fertilizantes líquidos
-</h3>
-
-<p>
-Muy utilizados en agricultura moderna debido a su facilidad de aplicación.
-</p>
-
-<ul>
-
-<li>Mezcla sencilla.</li>
-
-<li>Absorción eficiente.</li>
-
-<li>Automatización del riego.</li>
-
-<li>Ajustes rápidos.</li>
-
-</ul>
-
-<h2>
-Importancia del pH y la conductividad
-</h2>
-
-<p>
-La nutrición vegetal no depende únicamente de la cantidad de fertilizante aplicada. También es importante controlar el pH y la electroconductividad.
-</p>
-
-<p>
-El 
-<a href="https://www.mapa.gob.es/" target="_blank">
-Ministerio de Agricultura, Pesca y Alimentación
+<a href="#">
+Ver más
 </a>
-ha publicado diferentes recomendaciones relacionadas con el control nutricional y el manejo eficiente del agua en agricultura moderna.
-</p>
 
-<h3>
-pH
-</h3>
+</div>
 
-<p>
-El pH influye directamente en la capacidad de absorción de nutrientes. Cuando está fuera de rango pueden aparecer bloqueos nutricionales y disminuir la eficiencia del cultivo.
-</p>
+</div>
 
-<h3>
-Electroconductividad (EC)
-</h3>
+</div>
 
-<p>
-La EC mide la concentración de sales y nutrientes presentes en el agua o solución nutritiva.
-</p>
-
-<ul>
-
-<li>Estrés radicular.</li>
-
-<li>Acumulación de sales.</li>
-
-<li>Sobre fertilización.</li>
-
-</ul>
+<div class="product-card">
 
 <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2070&auto=format&fit=crop">
 
-<h2>
-Cómo aplicar fertilizantes correctamente
-</h2>
+<div class="product-info">
+
+<span class="product-tag">
+NUTRIENTES
+</span>
+
+<h3>
+Fertilizantes premium
+</h3>
 
 <p>
-Una nutrición equilibrada requiere observar constantemente el estado de las plantas y adaptar la fertilización según cada etapa del cultivo.
+Nutrientes diseñados para mejorar el crecimiento y la productividad.
 </p>
 
-<ul>
+<div class="product-bottom">
 
-<li>Seguir las dosis recomendadas.</li>
+<span class="price">
+39€
+</span>
 
-<li>Observar las hojas regularmente.</li>
-
-<li>Ajustar nutrientes según el crecimiento.</li>
-
-<li>Mantener una frecuencia estable.</li>
-
-</ul>
-
-<p>
-Aplicar más fertilizante no siempre significa mejores resultados. El exceso nutricional puede resultar perjudicial para las plantas.
-</p>
-
-<h2>
-Errores frecuentes en la fertilización
-</h2>
-
-<ul>
-
-<li>Sobre fertilización.</li>
-
-<li>Mezclar productos incompatibles.</li>
-
-<li>No controlar el pH.</li>
-
-<li>Usar agua de mala calidad.</li>
-
-<li>No revisar el drenaje.</li>
-
-<li>Aplicar nutrientes sin planificación.</li>
-
-</ul>
-
-<h2>
-Tecnología y nutrición agrícola moderna
-</h2>
-
-<p>
-La agricultura moderna incorpora herramientas tecnológicas para mejorar la gestión nutricional y optimizar recursos.
-</p>
-
-<ul>
-
-<li>Medidores digitales.</li>
-
-<li>Sensores de EC y pH.</li>
-
-<li>Sistemas automatizados.</li>
-
-<li>Control remoto.</li>
-
-<li>Aplicaciones de monitorización.</li>
-
-</ul>
-
-<p>
-Medios especializados y plataformas como 
-<a href="https://www.fao.org/home/es" target="_blank">FAO</a>
-destacan que la agricultura de precisión tendrá un papel cada vez más importante en el futuro de los cultivos sostenibles.
-</p>
-
-<h2>
-Beneficios de una nutrición equilibrada
-</h2>
-
-<ul>
-
-<li>Crecimiento uniforme.</li>
-
-<li>Raíces más fuertes.</li>
-
-<li>Mejor absorción de agua.</li>
-
-<li>Mayor estabilidad ambiental.</li>
-
-<li>Reducción de carencias.</li>
-
-<li>Plantas más saludables.</li>
-
-<li>Optimización del rendimiento.</li>
-
-</ul>
-
-<h2>
-Reflexión final sobre la nutrición vegetal
-</h2>
-
-<p>
-Los fertilizantes y nutrientes desempeñan un papel esencial en cualquier sistema de cultivo moderno. Comprender cómo funcionan y aprender a utilizarlos correctamente permite mejorar significativamente el desarrollo vegetal y la estabilidad del cultivo.
-</p>
-
-<p>
-La combinación de una nutrición equilibrada, un buen control del pH y una correcta gestión ambiental ayuda a crear espacios agrícolas más productivos, sostenibles y preparados para las necesidades actuales de la agricultura moderna.
-</p>
-
-</article>
+<a href="#">
+Ver más
+</a>
 
 </div>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1974&auto=format&fit=crop">
+
+<div class="product-info">
+
+<span class="product-tag">
+CULTIVO
+</span>
+
+<h3>
+Kit de cultivo básico
+</h3>
+
+<p>
+Todo lo necesario para empezar un cultivo doméstico eficiente.
+</p>
+
+<div class="product-bottom">
+
+<span class="price">
+89€
+</span>
+
+<a href="#">
+Ver más
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="reviews">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Opiniones de clientes
+</h2>
+
+<p>
+Miles de cultivadores ya confían en Patio-Verde.
+</p>
+
+</div>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<p>
+“Muy buena experiencia. El envío llegó rápido y el material venía perfectamente protegido.”
+</p>
+
+<span>
+— Carlos M.
+</span>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<p>
+“La web tiene muchísima información útil y el catálogo está muy bien organizado.”
+</p>
+
+<span>
+— Marta P.
+</span>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<p>
+“Todo muy profesional. Excelente atención y productos de muy buena calidad.”
+</p>
+
+<span>
+— David R.
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <footer>
 © 2026 Patio-Verde — Todos los derechos reservados.
